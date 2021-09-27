@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Online Pharmacy</title>>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  
+<body>
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="/images/logo1.PNG"></a>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+               <li><a href="/home">HOME</a></li>
+               <li><a href="/aboutus">ABOUT US</a></li>
+               <li><a href="/medicine">MEDICINE BOOKING</a></li>
+               <li><a href="/contact">CONTACT US</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+     
+        <div class="medicine">
+      <h1>Medicine Booking</h1>
+      <p>You can upload your prescriptions & get your medication delivered straight 
+        to your home at best rates from Arogya Online Pharmacy.
+      </p>
+      </div>
+    </section>
+  <section class="regform">
+    <div class="intro">
+      <h2>Register Now</h2>
+      <p>If you have an account please log in to the account</p>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+          <div class="card card-body text-center">
+            <h1><i class="fab fa-node-js fa-3x"></i></h1>
+            <p>Create an account or login</p>
+            <a href="/users/register" class="btn btn-primary btn-block mb-2 form-btn">Register</a>
+            <a href="/users/login" class="btn btn-secondary btn-block form-btn">Login</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<section class="footer">
+
+  <%- include("./partials/footer.ejs") %>
+</section>
+
+
+
+  <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+           navLinks.style.right = "0";
+         }
+         function hideMenu(){
+           navLinks.style.right = "-220px";
+         }
+
+  </script>
+</body>
+
+</html>

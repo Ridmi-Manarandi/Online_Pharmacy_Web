@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Online Pharmacy</title>>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo1.PNG"></a>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+               <li><a href="/home">HOME</a></li>
+               <li><a href="/aboutus">ABOUT US</a></li>
+               <li><a href="/medicine">MEDICINE BOOKING</a></li>
+               <li><a href="/contact">CONTACT US</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+   </nav>
+    <div class="text-box">
+        <h1>AROGYA ONLINE PHARMACY</h1>
+        <p>TRUSTWORTHY SERVICE WITH BEST<br>EXPERIENCE AND CELERITY</p>
+    </div>
+    </section>
+  
+     <section class="service">
+          <h1>Our Services</h1>
+          <div class="row">
+             <div class="service-col">
+               <h3>online pharmacy</h3>
+               <p>You can order your medicines.We will deliver them to given
+                 address and you can get your medicine within two days.No 
+                 delivery cost will apply on the service.If you feel any delay
+                 please inform us as much as quickly via hot number.You can pay for the
+                 serviceto the delivery person
+               </p>
+             
+            </div>
+            <div class="service-img">
+                 <img src="images/c4.PNG">
+           </div>
+           </div>
+            <div class="row">
+              <div class="service-img">
+                  <img src="images/c5.PNG">
+              </div>
+              <div class="service-col">
+                <h3>Pharmacy</h3>
+                <p>We provide trustworthy service and new 
+                  medicines.join with us and get our service
+                </p>
+              </div>
+            
+            
+          </div>
+   </section>
+
+   <section class="news">
+         <h1>Health News</h1>
+     <div class="row">
+       <div class="news-col">
+             <img src="images/c7.PNG">
+             <p>Maintain a safe distance from others, even if they don’t appear to be sick.
+              Wear a mask in public, especially indoors or when physical distancing is not possible.
+              Choose open, well-ventilated spaces over closed ones. Open a window if indoors.
+              Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+              Get vaccinated when it’s your turn.
+             </p>
+              <div class="layer">
+                <h3>Covid-19</h3>
+              </div>
+       </div>
+       <div class="news-col">
+        <img src="images/c8.JPG">
+        <p>Take acetaminophen or paracetamol to control fever and relieve pain. Do not take aspirin or ibuprofen.
+          Get plenty of rest and drink fluids to prevent dehydration.
+          Rest in a screened or air-conditioned room or under a bed net while you have a fever.
+          Use insecticide sprays in dark corners and burn repellent oils inside your home.
+</p>
+         <div class="layer">
+          <h3>Dengue</h3>
+         </div>
+        </div> 
+        <div class="news-col">
+          <img src="images/c9.JPG">
+          <p>Exercise most days of the week. Exercise is the most effective way to lower your blood pressure.
+            Consume a low-sodium diet. Too much sodium (or salt) causes blood pressure to rise.
+            Limit alcohol intake to no more than 1 to 2 drinks per day.
+            Make stress reduction a priority.Eat a Healthy Diet. Choose healthy meal and snack options.
+   
+         </p>
+           <div class="layer">
+            <h3>High Blood Pressure</h3>
+           </div>
+          </div>
+     </div>
+
+   </section>
+
+   <section class="order">
+     <h1>Onine medicine ordering</h1>
+     <h3>All our health services require appointments. Need help booking...?</h3>
+     <a href="/medicine" class="btn">Register Now</a>
+
+
+   </section>
+
+
+   <section class="footer">
+
+    <%- include("./partials/footer.ejs") %>
+  </section>
+
+
+
+
+  <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+           navLinks.style.right = "0";
+         }
+         function hideMenu(){
+           navLinks.style.right = "-220px";
+         }
+
+  </script>
+</body>
+
+</html>

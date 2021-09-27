@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Online Pharmacy</title>>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+             <a href="index.html"><img src="images/logo1.PNG"></a>
+              <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/aboutus">ABOUT US</a></li>
+                    <li><a href="/medicine">MEDICINE BOOKING</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      <h1>About Us</h1>
+      <p>Arogya is the most trusted online pharmacy with home delivery 
+        services in Sri Lanka.
+     </p>
+    </section>
+  
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the most trusted pharmacy in Sri Lanka</h1>
+        <p>Arogya Online Pharmacy is the best Online Pharmacy
+           in Sri Lanka with a wide range of prescription and OTC
+            medicines. We are one of the oldest and most trusted
+          pharmacies in Sri Lanka with over 20 years of experience
+         in the healthcare industry. Now you can order medicine 
+         Online at the best Sri Lankan online pharmacy at lowest
+          prices. Being the most trusted Online pharmacy in Sri Lanka,
+          we offer an array of best brands for all your medicine requirements 
+         in Sri Lanka. Now you can order medicine online & get 
+        it delivered to your doorstep.
+        </p>
+      </div>
+      <div class="about-col">
+        <img src="images/Capture1.PNG">
+
+      </div>
+    </div>
+  </section>
+
+
+  <%- include("./partials/footer.ejs") %>
+
+
+
+
+  <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+           navLinks.style.right = "0";
+         }
+         function hideMenu(){
+           navLinks.style.right = "-220px";
+         }
+
+  </script>
+</body>
+
+</html>
